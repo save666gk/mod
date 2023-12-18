@@ -54,7 +54,8 @@ Post.objects.all().order_by('-rating').values('dateCreation', 'Author__authorUse
 Вывести все комментарии (дата, пользователь, рейтинг, текст) к этой статье.
 Comment.objects.all().order_by().values('dateCreation', 'commentUser__username', 'commentPost', 'rating', 'Text')[0]
 
-=============================================================================================================================
+
+
 
 Post.objects.all().values('postAuthor', 'title') Post.objects.filter(author=author02) Post.objects.filter(title='Заголовок_статьи_1').values('author')
 
